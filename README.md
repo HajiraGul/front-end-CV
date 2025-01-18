@@ -24,3 +24,6 @@ The project consists of the following files:
 *   `index.html`: The main HTML file containing the structure of the website.
 *   `style.css`: The CSS file containing the styling rules for the website.
 *   `profile1.jpg`: A sample profile image.
+
+---
+![CV-output](https://github.com/HajiraGul/front-end-CV/blob/1cc3380e8f768242faafabc7cd28267c0e4879c9/CV-output.PNG)
