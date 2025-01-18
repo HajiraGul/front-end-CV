@@ -1,0 +1,233 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Profile Image Section */
+.profile-image {
+    text-align: center;
+    margin-bottom: 0; /* Remove margin */
+    background-color: #acaeae; /* Color for the image section */
+    padding: 20px; /* Add padding to create space around the image */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+/* Left Panel */
+.left-panel {
+    color: black;
+    width: 35%;
+    min-height: 100vh;
+    background-color: #d3d3d4; /* Set the same background color for the entire left panel */
+}
+
+/* Sections in Left Panel */
+.contact-info,
+.education-section,
+.skills-section {
+    padding: 20px; /* Maintain padding for sections */
+    margin-bottom: 0; /* Remove margin for a seamless look */
+    background-color: #d3d3d4; /* Background for sections to match */
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: black;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+}
+
+/* Skills Section */
+.skills-section ul li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: black;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 65%;
+    padding: 0; /* Remove padding for the header section */
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+.header-section {
+    text-align: left;
+    background-color: #acaeae; /* Same background color */
+    padding: 10 px;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: -30px; /* Adjust this to align with the V cut start */
+    padding-left: 30px;
+}
+
+/* Keep padding for the rest of the right panel */
+.summary-section,
+.experience-section,
+.references-section {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    font-size: 2em;
+    color: #040404;
+}
+
+.job-title {
+    font-size: 1.2em;
+    color: #060606;
+}
+
+.summary-section p,
+.references-section p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color:#040404;
+}
+
+.experience-section .job {
+    margin-bottom: 20px;
+    color:#040404;
+}
+.experience-section .p{
+    color:#acaeae;
+}
+
+.job h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #040404;
+}
+
+.job p {
+    font-size: 0.9em;
+    color: #050505;
+}
+
+.job ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 0.95em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+    .left-panel {
+        min-height: auto;
+        padding: 20px;
+    }
+    .right-panel {
+        padding: 20px;
+    }
+}
+
+/* Profile Image Section */
+.profile-image {
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #acaeae;
+    padding: 53px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); /* V shape */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+/* Timeline Styles for Education Section */
+.timeline-container {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px; /* Adjusts the padding for the timeline */
+}
+
+/* Vertical Line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black; /* Color of the vertical line */
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    padding-left: 30px; /* Adjusts space between the dot and the text */
+    margin-bottom: 20px; /* Adds space between each item */
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Timeline Content */
+.timeline-content p {
+    margin: 0;
+    font-size: 0.95em;
+    color: black;
+}
